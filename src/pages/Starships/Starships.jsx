@@ -16,12 +16,12 @@ const Starships = () => {
   return (
     <>
     <h3>Starships are meant to fly</h3>
+    <div className="card-container">
     {starships.length ?
     <>
       {starships.map(starship =>
-        <div key={starship.url}>
-          {starship.name}
-          <Link to='/starship' state={{starship}} key={starship.name}> {starship.name}</Link>
+        <div key={starship.url} className="card">
+          <Link to='/starship' state={{starship}} key={starship.name} className="links"> {starship.name}</Link>
         </div>
         )}
         </>
@@ -30,7 +30,15 @@ const Starships = () => {
         <div>Loading starships....</div>
         </>
     }
+    </div>
     </>
+
+
+
+
+
+
+      
   )
 }
 

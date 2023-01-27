@@ -8,10 +8,12 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
+      <main>
       <Routes>
         <Route path="/" element={<Starships/>}/>
         <Route path="/starship" element={<StarshipPage/>}/>
         </Routes>
+      </main>
     </div>
   );
 }
