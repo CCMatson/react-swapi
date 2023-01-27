@@ -9,7 +9,7 @@ const NavBar = () => {
         className="App-logo"
         alt="logo"
       /> */}
-			<h1>Niki Minaj's StarShips</h1>
+			<h1>Niki Minaj's Starships</h1>
       {/* <Link to="/shop">Shop</Link> */}
   
     </header>

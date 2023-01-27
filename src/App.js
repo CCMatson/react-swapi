@@ -1,14 +1,15 @@
 import './App.css';
-import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
+import Starships from './pages/Starships/Starships';
 
 function App() {
-  const [starships , setStarships] = useState([])
   return (
     <div className="App">
       <NavBar/>
-      {/* {starships.map(starship => <Starship key={starship.name} startship={starship}/>)} */}
-
+      <Routes>
+        <Route path="/" element={<Starships/>}/>
+        </Routes>
     </div>
   );
 }
