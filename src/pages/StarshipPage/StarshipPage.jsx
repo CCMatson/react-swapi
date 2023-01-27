@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { getDetails } from '../../services/sw-api'
-import { useLocation } from "react-router-dom"
+import { useLocation , Link } from "react-router-dom"
+
 
 const StarshipPage = () => {
   const [starshipPage, setStarshipPage] = useState({})
@@ -18,6 +19,7 @@ const StarshipPage = () => {
     <>
       <h3>Hey hey let's go the waves</h3>
       <h3>{starshipPage.model}</h3>
+      <Link to='/' >Link</Link>
     </>
   )
 }
